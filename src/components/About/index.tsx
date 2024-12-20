@@ -1,6 +1,13 @@
+"use client"
 import Image from "next/image";
 
 const About = () => {
+  const handleClick = () => {
+    window.scrollTo({
+    top: 1050,
+      behavior: "smooth"
+    })
+  }
   return (
     <section
       id="about"
@@ -12,25 +19,23 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  Brilliant Toolkit to Build Next.js SaaS Websites.
+                Transforming Digital Marketing for Growth and Success.
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel discussions and roundtables led by subject
-                  matter experts.
-                  <br /> <br />
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel.
+                  At Apeiron, we specialize in turning ideas into impactful
+                  digital realities. Our comprehensive suite of services is
+                  tailored for SMEs, entrepreneurs, individuals, and NGOs
+                  looking to leverage the power of digital tools
+             
                 </p>
 
-                <a
-                  href="/#"
+                <button onClick={() => {
+                  handleClick()
+                }}
                   className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
                   Know More
-                </a>
+                </button>
               </div>
             </div>
 
