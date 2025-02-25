@@ -11,8 +11,8 @@ const Contact = () => {
                 <span className="mb-6 block text-base font-medium text-dark dark:text-white">
                   CONTACT US
                 </span>
-                <h2 className="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
-                  Let&#39;s talk about your problem.
+                <h2 className="max-w-[280px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
+                Let&apos;s discuss how we can drive your business growth.
                 </h2>
               </div>
               <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
@@ -53,10 +53,10 @@ const Contact = () => {
                       How Can We Help?
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                      info@primepathltd.com
                     </p>
                     <p className="mt-1 text-base text-body-color dark:text-dark-6">
-                      contact@yourdomain.com
+                      +233243087077
                     </p>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="phone"
-                    placeholder="+885 1254 5211 552"
+                    placeholder="+23350674412"
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>

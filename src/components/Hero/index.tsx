@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
+        className="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] pb-10 lg:pt-[160px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
@@ -16,17 +16,16 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  Transformative Digital Solutions for Your Brand
+                  Empowering Small Businesses for Transformative Growth
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  Apeiron Digital Marketing is your trusted partner for
-                  next-level digital growth. From boosting brand visibility to
-                  crafting compelling content, we provide the essential tools
-                  and strategies for businesses, entrepreneurs, and NGOs to
-                  excel in the digital era.
+                  PrimePath is your trusted partner in business development and
+                  consultancy. We help small businesses turn their vision into
+                  reality with innovative strategies, personalized guidance, and
+                  tools that fuel growth and success.
                 </p>
                 <p className="mb-4 text-center text-base font-medium text-white/60">
-                  Ready to elevate your digital presence?
+                  Ready to take your business to new heights?
                 </p>
                 <ul className="mb-10 flex flex-wrap items-center justify-center gap-5">
                   <li>
@@ -34,7 +33,7 @@ const Hero = () => {
                       href="/services"
                       className="inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
                     >
-                      Discover Our Services
+                      Learn More
                     </Link>
                   </li>
                   <li>
@@ -65,7 +64,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="w-full px-4">
+            {/*<div className="w-full px-4">
               <div
                 className="wow fadeInUp relative z-10 mx-auto max-w-[845px]"
                 data-wow-delay=".25s"
@@ -1220,7 +1219,7 @@ const Hero = () => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>

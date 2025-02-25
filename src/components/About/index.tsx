@@ -1,13 +1,19 @@
-"use client"
+"use client";
 import Image from "next/image";
-
+import { usePathname , useRouter} from "next/navigation";
+import path from "path";
 const About = () => {
   const handleClick = () => {
     window.scrollTo({
-    top: 1050,
-      behavior: "smooth"
-    })
-  }
+      top: 1050,
+      behavior: "smooth",
+    });
+  };
+
+  const pathName = usePathname();
+  const router = useRouter()
+
+  const isHome = pathName === "/";
   return (
     <section
       id="about"
@@ -19,20 +25,24 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                Transforming Digital Marketing for Growth and Success.
+                  Empowering Small Businesses for Transformative Growth.
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  At Apeiron, we specialize in turning ideas into impactful
-                  digital realities. Our comprehensive suite of services is
-                  tailored for SMEs, entrepreneurs, individuals, and NGOs
-                  looking to leverage the power of digital tools
-             
+                  At PrimePath, we are passionate about helping small businesses
+                  scale sustainably. As a leading business development and
+                  consultancy firm, we specialize in diagnosing challenges,
+                  restructuring operations, and delivering tailor-made
+                  solutions. With a strong presence in Ghana and a vision for
+                  Africa, we use strategic expertise to turn local businesses
+                  into global contenders.
                 </p>
 
-                <button onClick={() => {
-                  handleClick()
-                }}
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
+                <button
+                  onClick={() => {
+                    isHome && router.push("/about");
+                    !isHome && handleClick();
+                  }}
+                  className="inline-flex select-none items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
                   Know More
                 </button>
@@ -67,7 +77,7 @@ const About = () => {
                   <div className="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">
                     <div>
                       <span className="block text-5xl font-extrabold text-white">
-                        09
+                        02
                       </span>
                       <span className="block text-base font-semibold text-white">
                         We have

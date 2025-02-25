@@ -1,12 +1,11 @@
 import About from "@/components/About";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Mission from "@/components/Mission";
-import Team from "@/components/Team";
+// import Team from "@/components/Team";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "About Us | Play SaaS Starter Kit and Boilerplate for Next.js",
+  title: "About Us | Play SaaS Starter Kit and Boilerplate for Next.js",
   description: "This is About page description",
 };
 
@@ -15,8 +14,8 @@ const AboutPage = () => {
     <main>
       <Breadcrumb pageName="About Us Page" />
       <About />
-      <Mission/>
-      <Team />
+        <Mission />
+      {/* <Team /> */}
     </main>
   );
 };

@@ -64,16 +64,16 @@ const Header = () => {
                 {pathUrl !== "/" ? (
                   <>
                     <Image
-                      src={`/images/logo/logo.svg`}
+                      src={`/images/logo/logo.png`}
                       alt="logo"
-                      width={240}
+                      width={220}
                       height={30}
                       className="header-logo w-full dark:hidden"
                     />
                     <Image
-                      src={`/images/logo/logo-white.svg`}
+                      src={`/images/logo/logo.png`}
                       alt="logo"
-                      width={240}
+                      width={220}
                       height={30}
                       className="header-logo hidden w-full dark:block"
                     />
@@ -83,18 +83,18 @@ const Header = () => {
                     <Image
                       src={`${
                         sticky
-                          ? "/images/logo/logo.svg"
-                          : "/images/logo/logo-white.svg"
+                          ? "/images/logo/logo.png"
+                          : "/images/logo/logo.png"
                       }`}
                       alt="logo"
-                      width={140}
+                      width={120}
                       height={30}
                       className="header-logo w-full dark:hidden"
                     />
                     <Image
-                      src={"/images/logo/logo-white.svg"}
+                      src={"/images/logo/logo.png"}
                       alt="logo"
-                      width={140}
+                      width={120}
                       height={30}
                       className="header-logo hidden w-full dark:block"
                     />
@@ -140,13 +140,13 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[0.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:ml-8 lg:flex lg:gap-x-8 xl:ml-14 xl:gap-x-12">
+                  <ul className="block   lg:ml-8 lg:flex lg:gap-x-8 xl:ml-14 xl:gap-x-12">
                     {menuData.map((menuItem, index) =>
                       menuItem.path ? (
                         <li key={index} className="group relative">
@@ -156,7 +156,7 @@ const Header = () => {
                               scroll={false}
                               href={menuItem.path}
                               className={`ud-menu-scroll flex py-2 text-base text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6 ${
-                                pathUrl === menuItem?.path && "text-primary"
+                                pathUrl === menuItem?.path && "text-primary dark:text-primary"
                               }`}
                             >
                               {menuItem.title}
@@ -233,32 +233,14 @@ const Header = () => {
                             </button>
                           )}
 
-                          <div
-                            className={`submenu relative left-0 top-full w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
-                              openIndex === index ? "!-left-[25px]" : "hidden"
-                            }`}
-                          >
-                            {menuItem?.submenu?.map((submenuItem: any, i) => (
-                              <Link
-                                href={submenuItem.path}
-                                key={i}
-                                className={`block rounded px-4 py-[10px] text-sm ${
-                                  pathUrl === submenuItem.path
-                                    ? "text-primary"
-                                    : "text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                                }`}
-                              >
-                                {submenuItem.title}
-                              </Link>
-                            ))}
-                          </div>
+                         
                         </li>
                       ),
                     )}
                   </ul>
                 </nav>
               </div>
-              <div className="hidden items-center justify-end pr-16 sm:flex lg:pr-0">
+              <div className=" items-center justify-end pr-16 flex lg:pr-0">
                 {/* theme toggler */}
                 <button
                   aria-label="theme toggler"
@@ -286,7 +268,7 @@ const Header = () => {
                   </span>
                 </button>
 
-                {session?.user ? (
+                {/*{session?.user ? (
                   <>
                     <p
                       className={`loginBtn px-7 py-3 text-base font-medium ${
@@ -351,7 +333,7 @@ const Header = () => {
                       </>
                     )}
                   </>
-                )}
+                )}*/}
               </div>
             </div>
           </div>

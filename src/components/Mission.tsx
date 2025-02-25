@@ -3,12 +3,19 @@ import SectionTitle from "./Common/SectionTitle";
 
 const Mission = () => {
   return (
-    <div className="overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark-2 lg:pb-[90px] lg:pt-[120px]">
-      <div className="container">
+    <div className="space-y-10 overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark-2 lg:pb-[90px] lg:pt-[120px]">
+      <div className="container md:flex space-y-10 justify-center">
         <SectionTitle
           subtitle="Our Mission"
           title="What Drives Us"
-          paragraph="To deliver innovative and results-driven solutions that help clients achieve measurable growth and success in the digital age. With a commitment to excellence and creativity, Apeiron ensures your brand resonates with your target audience, fostering growth and building lasting connections." center
+          paragraph="To drive business excellence by providing innovative, practical, and sustainable solutions that transform small enterprises into industry leaders across Africa. With a focus on empowering growth, PrimePath works relentlessly to help businesses scale and succeed in an ever-evolving marketplace."
+          center
+        />
+        <SectionTitle
+          subtitle="Our Vision"
+          title="What Inspires Us"
+          paragraph="To be the premier consultancy partner for small and medium-sized businesses seeking to thrive and expand within Africa’s dynamic markets. We aim to empower businesses to scale, innovate, and lead, driving sustainable success across the continent."
+          center
         />
       </div>
     </div>

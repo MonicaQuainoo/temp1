@@ -52,7 +52,7 @@ const Team = () => {
           <SectionTitle
             subtitle="Our Team"
             title="Meet Our Team"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            paragraph="At PrimePath, our team of skilled professionals is dedicated to helping small businesses grow and thrive across Africa."
             width="640px"
             center
           />
